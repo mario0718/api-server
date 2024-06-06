@@ -25,7 +25,7 @@ const zipDirectory = (source, out) => {
  * @param projectName 仓库名
  */
 exports.packageDist = (projectName) => {
-    const distPath = path.join('/projects', projectName, 'wgt-dist')
+    const distPath = path.join('/projects', projectName, 'dist')
     const timeStamp = new Date().getTime()
     const systemTempFolderPath = os.tmpdir();
     const zipPath = path.join(systemTempFolderPath, `${projectName}-${timeStamp}.zip`)
